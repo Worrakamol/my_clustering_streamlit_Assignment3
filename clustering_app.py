@@ -34,10 +34,6 @@ k = st.sidebar.slider("Select number of clusters (k)", 2, 10, 3)
 kmeans = KMeans(n_clusters=k, random_state=42)
 clusters = kmeans.fit_predict(X)
 
-# Define fixed colors to match the image
-custom_colors = ['orange', 'green', 'deepskyblue', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
-colors = [custom_colors[label] for label in y_kmeans]
-
 # Plotting
 fig, ax = plt.subplots()
 scatter = ax.scatter(X_pca[:, 0], X_pca[:, 1], c=clusters, cmap='rainbow')
