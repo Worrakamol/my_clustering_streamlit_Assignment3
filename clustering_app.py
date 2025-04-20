@@ -17,7 +17,7 @@ st.set_page_config(page_title="K-Means Clustering App", layout="centered")
 
 # Title
 st.title("🔍 K-Means Clustering App with Iris Dataset by Worrakamol Nantipatpanya")
-st.caption("by Worrakamol Nantipatpanya")
+
 
 # Load Iris dataset
 iris = load_iris()
